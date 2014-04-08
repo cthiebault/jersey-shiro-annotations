@@ -6,18 +6,9 @@ apply plugin: 'java'
 
 repositories { mavenCentral() }
 
-ext {
-  jerseyVersion = "2.7"
-  shiroVersion = "1.2.3"
-}
-
 dependencies {
-
-  compile("org.glassfish.jersey.containers:jersey-container-servlet:${jerseyVersion}")
-  compile("org.glassfish.jersey.ext:jersey-spring3:${jerseyVersion}")
-
-  compile("org.apache.shiro:shiro-core:${shiroVersion}")
-
+  compile("org.glassfish.jersey.containers:jersey-container-servlet:2.7")
+  compile("org.apache.shiro:shiro-core:1.2.3")
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
